@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل الفعالية</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    
+    <div class="logo-banner-container">
+      <div class="text-center">
+        <img src="assets/img/header.jpg" alt="غلاف دليل الفعاليات" style="width: 100%; height: 188px; object-fit: cover; border-radius: 0; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+      </div>
+    </div> 
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #2f5d85;">
+  
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="events.html">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>دليل فعاليات الجامعة</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link active" href="events.html">كل الفعاليات</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+          </ul>
+          <div class="form-check form-switch text-white ms-3">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+            <label class="form-check-label" for="darkModeToggle">الوضع الليلي</label>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container my-4">
+    <div class="row g-4">
+      <!-- محتوى الفعالية الرئيسي -->
+      <div class="col-lg-8">
+        <h1 id="eventTitle" class="h2 mb-3">عنوان الفعالية</h1>
+        <p class="text-muted"><i class="far fa-calendar"></i> <span id="eventDate">10 ديسمبر 2026</span> | <i class="fas fa-clock"></i> 10:00 صباحاً | <i class="fas fa-map-marker-alt"></i> <span id="eventLocation">المدرج الرئيسي</span></p>
+        <img id="eventImage" src="https://picsum.photos/800/400?random=30" class="img-fluid rounded mb-4" alt="صورة الفعالية">
+
+        <h3>عن الفعالية</h3>
+        <p id="eventDesc">تفاصيل ووصف الفعالية سيتم عرضه هنا...</p>
+        
+        <div class="d-flex gap-2 my-4">
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal"><i class="fas fa-ticket-alt me-1"></i> احجز مقعدك الان</button>
+          <button class="btn btn-outline-secondary" onclick="alert('تم نسخ رابط الفعالية!')"><i class="fas fa-share-alt me-1"></i> مشاركة</button>
+        </div>
+
+        <!-- معرض صور صغير -->
+        <h4 class="mt-4">معرض الصور</h4>
+        <div class="row g-2">
+          <div class="col-4"><img src="https://picsum.photos/300/200?random=31" class="img-fluid rounded" alt="gallery"></div>
+          <div class="col-4"><img src="https://picsum.photos/300/200?random=32" class="img-fluid rounded" alt="gallery"></div>
+          <div class="col-4"><img src="https://picsum.photos/300/200?random=33" class="img-fluid rounded" alt="gallery"></div>
+        </div>
+      </div>
+
+      <!-- الشريط الجانبي -->
+      <div class="col-lg-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">موقع الفعالية</h5>
+            
+            <img src="https://picsum.photos/400/250?random=40" class="img-fluid rounded border" alt="خريطة وهمية">
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">فعاليات ذات صلة</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="event.html?id=3" class="text-decoration-none">بطولة شطرنج </a></li>
+              <li class="mb-2"><a href="event.html?id=2" class="text-decoration-none">معرض الكتاب الرقمي</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal حجز وهمي -->
+  <div class="modal fade" id="bookingModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">تأكيد الحجز</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>هل ترغب في تأكيد حجز مقعد مجاني في هذه الفعالية؟</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+          <button type="button" class="btn btn-primary" onclick="alert('تم الحجز بنجاح!');" data-bs-dismiss="modal">تأكيد الحجز</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3 mt-5 text-center">
+    <p class="mb-0 small">&copy; 2026 جميع الحقوق محفوظة - الجامعة الافتراضية</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const eventId = urlParams.get('id');
+
+    const eventsData = {
+      "1": {
+        title:" ندوة الذكاء الاصطناعي",
+        date: "15 نوفمبر 2026",
+        location: "عبر منصة Zoom",
+        desc:" ناقشة مستقبل الذكاء الاصطناعي وتطبيقاته الحديثة في التعليم",
+        image: "assets/img/B.jpeg"
+      },
+      "2": {
+        title: "معرض الكتاب الرقمي والأكاديمي",
+        date: "20 نوفمبر 2026",
+        location: "المكتبة المركزية الافتراضية",
+        desc: "استعراض أحدث الأبحاث والمراجع العلمية والكتب الرقمية المتوفرة لطلاب الجامعة في مختلف الاختصاصات.",
+        image: "assets/img/D.webp"
+      },
+      "3": {
+        title: "بطولة الشطرنج الإلكترونية للطلاب",
+        date: "25 نوفمبر 2026",
+        location: "الصالة الرياضية الرقمية",
+        desc: "منافسات حماسية بين طلاب الكليات المختلفة لتحديد بطل الجامعة في لعبة الشطرنج الذكية.",
+        image: "assets/img/OIP.jpeg"
+      }
+    };
+
+    if (eventId && eventsData[eventId]) {
+      document.getElementById('eventTitle').textContent = eventsData[eventId].title;
+      document.getElementById('eventDate').textContent = eventsData[eventId].date;
+      document.getElementById('eventLocation').textContent = eventsData[eventId].location;
+      document.getElementById('eventDesc').textContent = eventsData[eventId].desc;
+      document.getElementById('eventImage').src = eventsData[eventId].image;
+    }
+  </script>
+</body>
+</html>
