@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كل الفعاليات - دليل فعاليات الجامعة الافتراضية</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+   
+    <div class="logo-banner-container">
+      <div class="text-center">
+        <img src="assets/img/header.jpg" alt="غلاف دليل الفعاليات" style="width: 100%; height: 188px; object-fit: cover; border-radius: 0; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+      </div>
+    </div> 
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #2f5d85;">
+  
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>دليل فعاليات الجامعة</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link active" href="events.html">كل الفعاليات</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+          </ul>
+          <div class="form-check form-switch text-white ms-3">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+            <label class="form-check-label" for="darkModeToggle">الوضع الليلي</label>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="container my-4">
+
+    
+
+    
+    <div class="card shadow-sm border-0 p-4 mb-4 bg-white">
+      <div class="row g-3 align-items-center">
+        
+       
+        <div class="col-md-5">
+          <div class="input-group">
+            <span class="input-group-text bg-light border-end-0"><i class="fa-solid fa-search text-muted"></i></span>
+            <input type="text" id="searchInput" class="form-control border-start-0 bg-light" placeholder="ابحث عن اسم الفعالية...">
+          </div>
+        </div>
+
+       
+        <div class="col-md-7">
+          <div class="d-flex flex-wrap gap-2 justify-content-md-end justify-content-center" id="categoryButtons">
+            <button class="btn btn-primary btn-sm rounded-pill px-3 active filter-btn" data-filter="all">الكل</button>
+            <button class="btn btn-outline-primary btn-sm rounded-pill px-3 filter-btn" data-filter="tech">تكنولوجيا</button>
+            <button class="btn btn-outline-success btn-sm rounded-pill px-3 filter-btn" data-filter="culture">ثقافة</button>
+            <button class="btn btn-outline-success btn-sm rounded-pill px-3 filter-btn" data-filter="sports">رياضة</button>
+            <button class="btn btn-outline-warning btn-sm rounded-pill px-3 filter-btn text-dark">مسابقة برمجية</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="mb-4">
+      <h2 class="h4 mb-4 border-start border-4 border-primary ps-2">قائمة الفعاليات المتاحة</h2>
+      <div class="row g-4" id="eventsGrid">
+        
+        <div class="col-md-4 event-item" data-category="tech">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/img/A.webp" class="card-img-top" alt="ندوة الذكاء الاصطناعي">
+            <div class="card-body">
+              <span class="badge bg-primary mb-2">تكنولوجيا</span>
+              <h5 class="card-title fw-bold">ندوة الذكاء الاصطناعي</h5>
+              <p class="card-text text-muted small mb-2"><i class="fa-regular fa-calendar-days me-1"></i> 10 ديسمبر 2026 | المدرج الرئيسي</p>
+              <p class="card-text text-secondary">مناقشة مستقبل الذكاء الاصطناعي وتطبيقاته الحديثة في التعليم.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3">
+              <a href="event.html?id=1" class="btn btn-sm btn-primary w-100">التفاصيل</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 event-item" data-category="culture">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/img/D.webp" class="card-img-top" alt="ملتقى القراءة">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">ثقافة</span>
+              <h5 class="card-title fw-bold">ملتقى القراءة والابتكار</h5>
+              <p class="card-text text-muted small mb-2"><i class="fa-regular fa-calendar-days me-1"></i> 20 نوفمبر 2026 | المكتبة المركزية</p>
+              <p class="card-text text-secondary">جلسات حوارية ممتعة حول أهم الكتب التقنية والإدارية.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3">
+              <a href="event.html?id=2" class="btn btn-sm btn-primary w-100">التفاصيل</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 event-item" data-category="sports">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/img/OIP.jpg" class="card-img-top" alt="بطولة الشطرنج">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">رياضة</span>
+              <h5 class="card-title fw-bold">بطولة الشطرنج الافتراضية</h5>
+              <p class="card-text text-muted small mb-2"><i class="fa-regular fa-calendar-days me-1"></i> 25 نوفمبر 2026 | الصالة الرياضية</p>
+              <p class="card-text text-secondary">منافسات قوية عبر الإنترنت بين الطلاب لمختلف المراحل.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3">
+              <a href="event.html?id=3" class="btn btn-sm btn-primary w-100">التفاصيل</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Button Scroll to Top -->
+  <button type="button" class="btn btn-primary btn-floating" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-4 pb-3 mt-5">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5 class="fw-bold">دليل فعاليات الجامعة الافتراضية</h5>
+          <p class="small text-muted">منصتك الأولى لمتابعة كافة الأنشطة والفعاليات الأكاديمية والطلابية.</p>
+        </div>
+        <div class="col-md-6 mb-3 text-md-end">
+          <h5>تابعنا</h5>
+          <a href="https://www.facebook.com/svuonline.org" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/SVU_Syria" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/syrian_virtual_university" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <hr class="bg-secondary">
+      <p class="text-center small mb-0">جميع الحقوق محفوظة&copy; 2026- الجامعة الافتراضية</p>
+    
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل فعاليات الجامعة الافتراضية - اتصل بنا</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <!-- 1. صورة اللوغو/البانر العلوي أولاً -->
+    <div class="logo-banner-container">
+      <div class="text-center"> <!-- تم إزالة mb-4 لإلغاء الفراغ -->
+        <img src="assets/img/header.jpg" alt="غلاف دليل الفعاليات" style="width: 100%; height: 188px; object-fit: cover; border-radius: 0; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+      </div>
+    </div> <!-- تم إغلاق الوسم هنا بشكل صحيح -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #2f5d85;">
+  
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="events.html">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>دليل فعاليات الجامعة</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link active" href="events.html">كل الفعاليات</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+          </ul>
+          <div class="form-check form-switch text-white ms-3">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+            <label class="form-check-label" for="darkModeToggle">الوضع الليلي</label>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!-- Main Content -->
+<main class="container my-5">
+<div class="row">
+<!-- معلومات التواصل -->
+<div class="col-lg-5 mb-4">
+<h2 class="h4 mb-3 border-start border-4 border-primary ps-2">تواصل معنا</h2>
+<p class="text-muted mb-4">نحن هنا للإجابة على استفساراتكم ومقترحاتكم المتعلقة بفعاليات الجامعة الافتراضية.</p>
+
+
+<ul class="list-unstyled">
+<li class="mb-3 d-flex align-items-center">
+<i class="fa-solid fa-envelope text-primary fs-4 me-3"></i>
+<div>
+<strong>البريد الإلكتروني:</strong><br>
+<span class="text-muted">support@svu-events.edu.sy</span>
+</div>
+</li>
+<li class="mb-3 d-flex align-items-center">
+<i class="fa-solid fa-phone text-primary fs-4 me-3"></i>
+<div>
+<strong>رقم الهاتف / الدعم الفني:</strong><br>
+<span class="text-muted">+963 11 000 0000</span>
+</div>
+</li>
+<li class="mb-3 d-flex align-items-center">
+<i class="fa-solid fa-location-dot text-primary fs-4 me-3"></i>
+<div>
+<strong>العنوان:</strong><br>
+<span class="text-muted">الجامعة الافتراضية السورية - دمشق، سوريا</span>
+</div>
+</li>
+</ul>
+</div>
+
+<!-- نموذج الإرسال -->
+<div class="col-lg-7">
+<div class="card shadow-sm border-0 p-4">
+<h3 class="h5 mb-3">أرسل لنا رسالة</h3>
+<form>
+<div class="mb-3">
+<label for="name" class="form-label">الاسم الكامل</label>
+<input type="text" class="form-control" id="name" placeholder="أدخل اسمك الكامل" required>
+</div>
+<div class="mb-3">
+<label for="email" class="form-label">البريد الإلكتروني</label>
+<input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+</div>
+<div class="mb-3">
+<label for="subject" class="form-label">موضوع الرسالة</label>
+<input type="text" class="form-control" id="subject" placeholder="مثال: استفسار حول فعالية برمجة">
+</div>
+<div class="mb-3">
+<label for="message" class="form-label">الرسالة</label>
+<textarea class="form-control" id="message" rows="4" placeholder="اكتب رسالتك هنا..." required></textarea>
+</div>
+<button type="submit" class="btn btn-primary w-100">إرسال الرسالة</button>
+</form>
+<div id="formAlert" class="mt-3" style="display: none;"></div>
+</div>
+</div>
+</div>
+
+
+
+</main>
+
+<!-- Footer -->
+
+
+
+<footer class="bg-dark text-white pt-4 pb-3 mt-5">
+<div class="container text-center text-md-start">
+<div class="row">
+<div class="col-md-6 mb-3">
+<h5 class="fw-bold">دليل فعاليات الجامعة الافتراضية</h5>
+<p class="small text-muted">منصتك الأولى لمتابعة كافة الأنشطة والفعاليات الأكاديمية والطلابية.</p>
+</div>
+<div class="col-md-6 mb-3 text-md-end">
+<h5>تابعنا</h5>
+<a href="https://www.facebook.com/svuonline.org" target="_blank" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+<a href="https://twitter.com/SVU_Syria" target="_blank" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+<a href="https://www.instagram.com/syrian_virtual_university" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+<hr class="bg-secondary">
+<p class="text-center small mb-0"> جميع الحقوق محفوظة&copy; 2026- الجامعة الافتراضية</p>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
